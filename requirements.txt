@@ -1,0 +1,6 @@
+streamlit
+ifcopenshell
+ifctester
+bcf-client
+numpy
+pandas
