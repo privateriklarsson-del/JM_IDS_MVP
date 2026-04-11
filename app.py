@@ -135,7 +135,15 @@ def main():
                     total = len(applicable)
 
                     if spec.status is True:
-                        st.markdown(f"\u2705 **{spec.name}** — {total} checked, all passed")
+                        with st.expander(f"\u2705 **{spec.name}** — {total} checked, all passed", expanded=False):
+                            type_id_counts = {}
+                            for entity in applicable:
+                                psets = ifcopenshell.util.element.get_psets(entity)
+                                tid = psets.get("JM", {}).get("TypeID", "") or "(empty)"
+                                type_id_counts[tid] = type_id_counts.get(tid, 0) + 1
+                            rows = [{"TypeID": tid, "Count": cnt} for tid, cnt in sorted(type_id_counts.items())]
+                            if rows:
+                                st.dataframe(rows, use_container_width=True, hide_index=True)
                         all_results.append({"rule_set": name, "rule": spec.name, "status": "PASS", "elements_checked": total})
 
                     elif spec.status is False:
