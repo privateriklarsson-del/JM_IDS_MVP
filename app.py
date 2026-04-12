@@ -184,9 +184,19 @@ def main():
                                     "Reason": "; ".join(info["reasons"][:3]),
                                 })
                             st.dataframe(rows, use_container_width=True, hide_index=True)
-                            passed = total - fail_count
-                            if passed > 0:
-                                st.markdown(f"*{passed} elements passed.*")
+                            failed_ids = set(failures.keys())
+                            passed_entities = [e for e in applicable if e.id() not in failed_ids]
+                            if passed_entities:
+                                st.markdown(f"**{len(passed_entities)} elements passed:**")
+                                tid_counts = {}
+                                for entity in passed_entities:
+                                    psets = ifcopenshell.util.element.get_psets(entity)
+                                    tid = psets.get("JM", {}).get("TypeID", "") or "(empty)"
+                                    tid_counts[tid] = tid_counts.get(tid, 0) + 1
+                                st.dataframe(
+                                    [{"TypeID": tid, "Count": cnt} for tid, cnt in sorted(tid_counts.items())],
+                                    use_container_width=True, hide_index=True,
+                                )
 
                         # BCF
                         guids = []
