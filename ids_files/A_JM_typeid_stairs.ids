@@ -53,9 +53,9 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="TR01\-[0-9]+"/>
-              <xs:pattern value="TR02\-[0-9]+"/>
-              <xs:pattern value="TR03\-[0-9]+"/>
+              <xs:pattern value="TR01-*"/>
+              <xs:pattern value="TR02-*"/>
+              <xs:pattern value="TR03-*"/>
             </xs:restriction>
           </value>
         </property>
