@@ -4,7 +4,7 @@
     <title>A - JM TypeID Walls</title>
     <description>Validates that all walls have a valid JM TypeID from the approved list.</description>
     <author>bim@jm.se</author>
-    <date>2026-04-11</date>
+    <date>2026-04-12</date>
     <purpose>JM type classification — walls</purpose>
   </info>
   <specifications>
@@ -34,7 +34,7 @@
             <simpleValue>IFCWALL</simpleValue>
           </name>
         </entity>
-        <property dataType="IFCLABEL">
+        <property>
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -44,7 +44,7 @@
         </property>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="TypeID must be one of the approved codes">
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
