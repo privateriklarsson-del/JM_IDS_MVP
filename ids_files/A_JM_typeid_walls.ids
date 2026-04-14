@@ -17,7 +17,7 @@
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="Every wall must have a TypeID in the JM PropertySet">
+        <property cardinality="required" instructions="Every wall must have a TypeID in the JM PropertySet">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
