@@ -118,6 +118,9 @@ def main():
                 f"Schema: {ifc_file.schema}, "
                 f"Elements: {len(list(ifc_file))}"
             )
+            # Debug: wall type counts
+            for t in ["IfcWall", "IfcWallStandardCase"]:
+                st.caption(f"{t}: {len(ifc_file.by_type(t, include_subtypes=False))}")
 
             all_results = []
             bcf_issues = []
