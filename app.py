@@ -121,6 +121,11 @@ def main():
             # Debug: wall type counts
             for t in ["IfcWall", "IfcWallStandardCase"]:
                 st.caption(f"{t}: {len(ifc_file.by_type(t, include_subtypes=False))}")
+            for t in ["IfcDoor", "IfcWindow", "IfcSlab", "IfcStair", "IfcCovering",
+          "IfcDoorStyle", "IfcWindowStyle", "IfcSlabStandardCase"]:
+                c = len(ifc_file.by_type(t, include_subtypes=False))
+                if c > 0:
+                   st.caption(f"{t}: {c}")
 
             all_results = []
             bcf_issues = []
