@@ -169,7 +169,7 @@
         </property>
       </applicability>
       <requirements>
-        <property cardinality="required" instructions="Project-specific wall — TypeID starts with IV">
+        <property cardinality="required" instructions="Project-specific interior wall — TypeID starts with IV">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
