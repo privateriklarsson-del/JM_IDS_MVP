@@ -163,7 +163,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="IWC.**"/>
+              <xs:pattern value="IWC.*"/>
             </xs:restriction>
           </value>
         </property>
