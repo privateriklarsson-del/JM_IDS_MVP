@@ -145,7 +145,6 @@
         </property>
       </requirements>
     </specification>
-    </specification>
     <specification name="Project-specific walls (IV-prefix)" ifcVersion="IFC2X3 IFC4">
       <applicability minOccurs="0" maxOccurs="unbounded">
         <entity>
