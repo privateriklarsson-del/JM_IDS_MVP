@@ -163,13 +163,14 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="IWC.*"/>
+              <xs:pattern value="IV.*"/>
+              <xs:pattern value="YV.*"/>
             </xs:restriction>
           </value>
         </property>
       </applicability>
       <requirements>
-        <property cardinality="required" instructions="Project-specific interior wall — TypeID starts with IV">
+        <property cardinality="required" instructions="Project-specific interior wall — TypeID starts with IV. Project-specific Utfackningsvägg  — TypeID starts with YV">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
