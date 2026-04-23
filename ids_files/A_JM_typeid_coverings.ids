@@ -72,9 +72,9 @@
               <xs:enumeration value="GL1"/>
               <xs:enumeration value="GL2"/>
               <xs:pattern value="IK1.*"/>
-              <xs:pattern value="IK2.*+"/>
+              <xs:pattern value="IK2.*"/>
               <xs:pattern value="IK.*"/>
-              <xs:pattern value="LU.*+"/>
+              <xs:pattern value="LU.*"/>
               <xs:pattern value="MU.*"/>
             </xs:restriction>
           </value>
