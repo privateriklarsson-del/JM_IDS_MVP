@@ -17,7 +17,7 @@
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="Every covering must have a TypeID in the JM PropertySet">
+        <property cardinality="required" instructions="Every covering must have a TypeID in the JM PropertySet">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -34,7 +34,7 @@
             <simpleValue>IFCCOVERING</simpleValue>
           </name>
         </entity>
-        <property dataType="IFCLABEL">
+        <property>
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -44,7 +44,7 @@
         </property>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="TypeID must be one of the approved codes">
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -71,11 +71,11 @@
               <xs:enumeration value="FF-32"/>
               <xs:enumeration value="GL1"/>
               <xs:enumeration value="GL2"/>
-              <xs:pattern value="IK1[0-9]+"/>
-              <xs:pattern value="IK2[0-9]+"/>
-              <xs:pattern value="IK[0-9]+"/>
-              <xs:pattern value="LU[0-9]+"/>
-              <xs:pattern value="MU[0-9]+"/>
+              <xs:pattern value="IK1.*"/>
+              <xs:pattern value="IK2.*+"/>
+              <xs:pattern value="IK.*"/>
+              <xs:pattern value="LU.*+"/>
+              <xs:pattern value="MU.*"/>
             </xs:restriction>
           </value>
         </property>
