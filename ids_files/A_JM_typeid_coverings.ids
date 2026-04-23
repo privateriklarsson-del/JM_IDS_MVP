@@ -53,27 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="CE-01"/>
-              <xs:pattern value="CE-02"/>
-              <xs:pattern value="CE-03"/>
-              <xs:pattern value="CE-08"/>
-              <xs:pattern value="CE-14"/>
-              <xs:pattern value="CE-15"/>
-              <xs:pattern value="CE-16"/>
-              <xs:pattern value="CE-17"/>
-              <xs:pattern value="CE-18"/>
-              <xs:pattern value="FD-T"/>
-              <xs:pattern value="FF-01"/>
-              <xs:pattern value="FF-14"/>
-              <xs:pattern value="FF-15"/>
-              <xs:pattern value="FF-21"/>
-              <xs:pattern value="FF-31"/>
-              <xs:pattern value="FF-32"/>
-              <xs:pattern value="GL1"/>
-              <xs:pattern value="GL2"/>
-              <xs:pattern value="IK.*"/>
-              <xs:pattern value="LU.*"/>
-              <xs:pattern value="MU.*"/>
+              <xs:pattern value="CE-01|CE-02|CE-03|CE-08|CE-14|CE-15|CE-16|CE-17|CE-18|FD-T|FF-01|FF-14|FF-15|FF-21|FF-31|FF-32|GL1|GL2|IK.*|LU.*|MU.*"/>
             </xs:restriction>
           </value>
         </property>
