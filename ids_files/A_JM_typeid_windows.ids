@@ -5,7 +5,7 @@
     <description>Validates that all windows have a valid JM TypeID from the approved list.</description>
     <author>bim@jm.se</author>
     <date>2026-04-11</date>
-    <purpose>JM type classification — windows</purpose>
+    <purpose>JM type classification - windows</purpose>
   </info>
   <specifications>
     <specification name="All windows must have JM TypeID" ifcVersion="IFC2X3 IFC4">
@@ -17,7 +17,7 @@
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="Every window must have a TypeID in the JM PropertySet">
+        <property cardinality="required" instructions="Every window must have a TypeID in the JM PropertySet">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -34,7 +34,7 @@
             <simpleValue>IFCWINDOW</simpleValue>
           </name>
         </entity>
-        <property dataType="IFCLABEL">
+        <property>
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -44,7 +44,7 @@
         </property>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="TypeID must be one of the approved codes">
+        <property cardinality="required" instructions="TypeID must match: BGV1, F10-N, F15-N, F24-N, FF10-N, or TFn-N (where N is digits)">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -53,12 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:enumeration value="BGV1"/>
-              <xs:pattern value="F10\-[0-9]+"/>
-              <xs:pattern value="F15\-[0-9]+"/>
-              <xs:pattern value="F24\-[0-9]+"/>
-              <xs:pattern value="FF10\-[0-9]+"/>
-              <xs:pattern value="TF[0-9]+\-[0-9]+"/>
+              <xs:pattern value="BGV1|F10-[0-9]+|F15-[0-9]+|F24-[0-9]+|FF10-[0-9]+|TF[0-9]+-[0-9]+"/>
             </xs:restriction>
           </value>
         </property>
