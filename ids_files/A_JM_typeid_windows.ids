@@ -53,7 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="BGV1|F10-[0-9]+|F15-[0-9]+|F24-[0-9]+|FF10-[0-9]+|TF[0-9]+-[0-9]+"/>
+              <xs:pattern value="BGV1|F10-.*|F15-.*|F24-.*|FF10-.*|TF.*-.*"/>
             </xs:restriction>
           </value>
         </property>
