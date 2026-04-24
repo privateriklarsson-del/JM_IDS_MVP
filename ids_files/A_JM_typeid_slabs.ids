@@ -5,7 +5,7 @@
     <description>Validates that all slabs have a valid JM TypeID from the approved list.</description>
     <author>bim@jm.se</author>
     <date>2026-04-11</date>
-    <purpose>JM type classification — slabs</purpose>
+    <purpose>JM type classification - slabs</purpose>
   </info>
   <specifications>
     <specification name="All slabs must have JM TypeID" ifcVersion="IFC2X3 IFC4">
@@ -17,7 +17,7 @@
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="Every slab must have a TypeID in the JM PropertySet">
+        <property cardinality="required" instructions="Every slab must have a TypeID in the JM PropertySet">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -34,7 +34,7 @@
             <simpleValue>IFCSLAB</simpleValue>
           </name>
         </entity>
-        <property dataType="IFCLABEL">
+        <property >
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -44,7 +44,7 @@
         </property>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="TypeID must be one of the approved codes">
+        <property cardinality="required" instructions="TypeID must be one of the approved codes: FS, FS-05">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -53,8 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:enumeration value="FS"/>
-              <xs:enumeration value="FS-05"/>
+              <xs:pattern value="FS|FS-05"/>
             </xs:restriction>
           </value>
         </property>
