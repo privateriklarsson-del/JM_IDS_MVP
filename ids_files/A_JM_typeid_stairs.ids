@@ -20,7 +20,7 @@
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="Every stair must have a TypeID in the JM PropertySet">
+        <property cardinality="required" instructions="Every stair must have a TypeID in the JM PropertySet">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -37,7 +37,7 @@
             <simpleValue>IFCSTAIR</simpleValue>
           </name>
         </entity>
-        <property dataType="IFCLABEL">
+        <property>
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
@@ -47,7 +47,7 @@
         </property>
       </applicability>
       <requirements>
-        <property dataType="IFCLABEL" cardinality="required" instructions="TypeID must start with TR01-, TR02-, or TR03- followed by a variant code">
+        <property cardinality="required" instructions="TypeID must start with TR01-, TR02-, or TR03- followed by a variant code">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
