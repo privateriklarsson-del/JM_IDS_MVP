@@ -44,7 +44,7 @@
         </property>
       </applicability>
       <requirements>
-        <property cardinality="required" instructions="TypeID must match: BGV1, F10-N, F15-N, F24-N, FF10-N, or TFn-N (where N is digits)">
+        <property cardinality="required" instructions="TypeID must match: BGV1(or2), F*-*, FF*-*, or TF*-* (where * is wild)">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
