@@ -57,89 +57,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:enumeration value="EWP-01"/>
-              <xs:enumeration value="EWP-02"/>
-              <xs:enumeration value="EWP-11"/>
-              <xs:enumeration value="EWP-12"/>
-              <xs:enumeration value="EWP-21"/>
-              <xs:enumeration value="EWP-22"/>
-              <xs:enumeration value="EWP-31"/>
-              <xs:enumeration value="EWP-32"/>
-              <xs:enumeration value="EWP-41"/>
-              <xs:enumeration value="EWP-42"/>
-              <xs:enumeration value="EWP-51"/>
-              <xs:enumeration value="EWP-52"/>
-              <xs:enumeration value="EWP-61"/>
-              <xs:enumeration value="EWP-62"/>
-              <xs:enumeration value="EWW-01[0-9]{2}"/>
-              <xs:enumeration value="EWW-02[0-9]{2}"/>
-              <xs:enumeration value="EWW-03[0-9]{2}"/>
-              <xs:enumeration value="EWW-04[0-9]{2}"/>
-              <xs:enumeration value="EWW-05[0-9]{2}"/>
-              <xs:enumeration value="EWW-06[0-9]{2}"/>
-              <xs:enumeration value="EWW-07[0-9]{2}"/>
-              <xs:enumeration value="EWW-08[0-9]{2}"/>
-              <xs:enumeration value="EWW-09[0-9]{2}"/>
-              <xs:enumeration value="EWW-10[0-9]{2}"/>
-              <xs:enumeration value="EWW-[0-9]{2}01"/>
-              <xs:enumeration value="EWW-[0-9]{2}02"/>
-              <xs:enumeration value="EWW-[0-9]{2}03"/>
-              <xs:enumeration value="EWW-[0-9]{2}04"/>
-              <xs:enumeration value="EWW-[0-9]{2}05"/>
-              <xs:enumeration value="EWW-[0-9]{2}06"/>
-              <xs:enumeration value="EWW-[0-9]{2}07"/>
-              <xs:enumeration value="FD-F"/>
-              <xs:enumeration value="FD-M"/>
-              <xs:enumeration value="IWC"/>
-              <xs:enumeration value="IWS-01"/>
-              <xs:enumeration value="IWS-03"/>
-              <xs:enumeration value="IWS-03i"/>
-              <xs:enumeration value="IWS-06"/>
-              <xs:enumeration value="IWS-10"/>
-              <xs:enumeration value="IWS-103"/>
-              <xs:enumeration value="IWS-112"/>
-              <xs:enumeration value="IWS-117"/>
-              <xs:enumeration value="IWS-122"/>
-              <xs:enumeration value="IWS-123"/>
-              <xs:enumeration value="IWS-125"/>
-              <xs:enumeration value="IWS-13"/>
-              <xs:enumeration value="IWS-135"/>
-              <xs:enumeration value="IWS-13i"/>
-              <xs:enumeration value="IWS-145"/>
-              <xs:enumeration value="IWS-155"/>
-              <xs:enumeration value="IWS-16"/>
-              <xs:enumeration value="IWS-165"/>
-              <xs:enumeration value="IWS-166"/>
-              <xs:enumeration value="IWS-16i"/>
-              <xs:enumeration value="IWS-175"/>
-              <xs:enumeration value="IWS-185"/>
-              <xs:enumeration value="IWS-194"/>
-              <xs:enumeration value="IWS-198"/>
-              <xs:enumeration value="IWS-25"/>
-              <xs:enumeration value="IWS-25i"/>
-              <xs:enumeration value="IWS-26"/>
-              <xs:enumeration value="IWS-26i"/>
-              <xs:enumeration value="IWS-29"/>
-              <xs:enumeration value="IWS-29i"/>
-              <xs:enumeration value="IWS-35"/>
-              <xs:enumeration value="IWS-35i"/>
-              <xs:enumeration value="IWS-39"/>
-              <xs:enumeration value="IWS-39i"/>
-              <xs:enumeration value="IWS-40"/>
-              <xs:enumeration value="IWS-41"/>
-              <xs:enumeration value="IWS-44"/>
-              <xs:enumeration value="IWS-45"/>
-              <xs:enumeration value="IWS-54"/>
-              <xs:enumeration value="IWS-64"/>
-              <xs:enumeration value="IWS-73"/>
-              <xs:enumeration value="IWS-84"/>
-              <xs:enumeration value="IWS-85"/>
-              <xs:enumeration value="IWS-96"/>
-              <xs:enumeration value="IWS-97"/>
-              <xs:enumeration value="IWS-98"/>
-              <xs:enumeration value="IWS-99"/>
-              <xs:enumeration value="IWW-09"/>
-              <xs:enumeration value="IWW-10"/>
+              <xs:pattern value="EWP-01|EWP-02|EWP-11|EWP-12|EWP-21|EWP-22|EWP-31|EWP-32|EWP-41|EWP-42|EWP-51|EWP-52|EWP-61|EWP-62|EWW-(0[1-9]|10)0[1-7]|FD-F|FD-M|IWC|IWS-01|IWS-03|IWS-03i|IWS-06|IWS-10|IWS-13|IWS-13i|IWS-16|IWS-16i|IWS-25|IWS-25i|IWS-26|IWS-26i|IWS-29|IWS-29i|IWS-35|IWS-35i|IWS-39|IWS-39i|IWS-40|IWS-41|IWS-44|IWS-45|IWS-54|IWS-64|IWS-73|IWS-84|IWS-85|IWS-96|IWS-97|IWS-98|IWS-99|IWS-103|IWS-112|IWS-117|IWS-122|IWS-123|IWS-125|IWS-135|IWS-145|IWS-155|IWS-165|IWS-166|IWS-175|IWS-185|IWS-194|IWS-198|IWW-09|IWW-10|IV.*|YV.*"/>
             </xs:restriction>
           </value>
         </property>
@@ -163,8 +81,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="IV.*"/>
-              <xs:pattern value="YV.*"/>
+              <xs:pattern value="IV.*|YV.*"/>
             </xs:restriction>
           </value>
         </property>
