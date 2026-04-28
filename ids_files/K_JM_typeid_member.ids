@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>K - JM TypeID Member</title>
+    <description>Validates that all Member (IFCMEMBER) have a valid JM TypeID from the approved list.</description>
+    <author>bim@jm.se</author>
+    <date>2026-04-28</date>
+    <purpose>JM type classification — Member</purpose>
+  </info>
+  <specifications>
+    <specification name="All Member must have JM TypeID" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCMEMBER</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="Every Member must have a TypeID in the JM PropertySet">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Member TypeID must be an approved code" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCMEMBER</simpleValue></name>
+        </entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FB60/5|RB37/3|FB150/20|FB200/25|M20|M36|M48|LM1|LM2|M20-L80|M20-L100|C.+|C.+|SM.+|A1|A2|A3|A4|A5|MS1|MS2|MS3|D1|D2|D3|D4|D5|F1|F2|F3|F1A|F2A|F3A|FG1|T1|TG1|HUS3-H 10.+100|E.+P M10.+100"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>
