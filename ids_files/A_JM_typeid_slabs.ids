@@ -53,7 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="FS|BPL|HDF|LG1.*|LG2.*|LG3.*|RMP"/>
+              <xs:pattern value="FS|BPL|HDF|RMP|LG1.*|LG2.*|LG3.*"/>
             </xs:restriction>
           </value>
         </property>
