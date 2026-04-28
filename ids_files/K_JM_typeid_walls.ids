@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>A - JM TypeID walls</title>
+    <description>Validates that all walls (IFCWALL) have a valid JM TypeID from the approved list.</description>
+    <author>bim@jm.se</author>
+    <date>2026-04-28</date>
+    <purpose>JM type classification — walls</purpose>
+  </info>
+  <specifications>
+    <specification name="All walls must have JM TypeID" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="IFCWALL.*"/>
+            </xs:restriction>
+          </name>
+        </entity>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="Every walls must have a TypeID in the JM PropertySet">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="walls TypeID must be an approved code" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="IFCWALL.*"/>
+            </xs:restriction>
+          </name>
+        <property>
+        </entity>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="YVB.+|EWP-21|EWP-22|EWP-31|EWP-32|EWP-01|EWP-02|EWP-11|EWP-12|EWP-41|EWP-42|EWP-51|EWP-52|EWP-61|EWP-62|YVK.+|EWC-23|EWC-03|EWC-05|IVB.+|IWC-23|IWC-24|IWC-25|IWC-03|IWC-04|IWC-13|SMU.+|TU1.+|LS.+|SE.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </requirements>
+    </specification>
+	<specification name="Project-specific walls (IVB-prefix)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="IFCWALL.*"/>
+            </xs:restriction>
+          </name>
+        </entity>
+        <property>
+          <propertySet>
+            <simpleValue>JM</simpleValue>
+          </propertySet>
+          <baseName>
+            <simpleValue>TypeID</simpleValue>
+          </baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="IVB.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="Project-specific interior wall — TypeID starts with IV. Project-specific Utfackningsvägg  — TypeID starts with YV">
+          <propertySet>
+            <simpleValue>JM</simpleValue>
+          </propertySet>
+          <baseName>
+            <simpleValue>TypeID</simpleValue>
+          </baseName>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>
