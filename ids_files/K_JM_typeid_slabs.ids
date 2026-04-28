@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>A - JM TypeID Slab</title>
+    <description>Validates that all Slab (IFCSLAB) have a valid JM TypeID from the approved list.</description>
+    <author>bim@jm.se</author>
+    <date>2026-04-28</date>
+    <purpose>JM type classification — Slab</purpose>
+  </info>
+  <specifications>
+    <specification name="All Slab must have JM TypeID" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCSLAB</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="Every Slab must have a TypeID in the JM PropertySet">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Slab TypeID must be an approved code" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCSLAB</simpleValue></name>
+        </entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="HDF.+|FS-05|FS-01|BPL.+|BJLT.+|FS-03|FS-02|GP0.+|EG.+|EG.+-V|PG.+|PG.+-V|HT.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>
