@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids xmlns="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>K - JM TypeID Pile</title>
+    <description>Validates that all Pile (IFCPILE) have a valid JM TypeID from the approved list.</description>
+    <author>bim@jm.se</author>
+    <date>2026-04-28</date>
+    <purpose>JM type classification — Pile</purpose>
+  </info>
+  <specifications>
+    <specification name="All Pile must have JM TypeID" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCPILE</simpleValue></name>
+        </entity>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="Every Pile must have a TypeID in the JM PropertySet">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="Pile TypeID must be an approved code" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity>
+          <name><simpleValue>IFCPILE</simpleValue></name>
+        </entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="required" instructions="TypeID must be one of the approved codes">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="S.+-V|SP.+-V|S.+-H|XPS.+-H|MU.+-V|LU.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>
