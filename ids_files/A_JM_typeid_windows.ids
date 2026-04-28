@@ -53,7 +53,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="GPU.*|BF.*|F.*-.*|FF.*-.*|TF.*-.*"/>
+              <xs:pattern value="GPU.+|BF.+|F.+-.*|FF.+-.+|TF.+-.+"/>
             </xs:restriction>
           </value>
         </property>
