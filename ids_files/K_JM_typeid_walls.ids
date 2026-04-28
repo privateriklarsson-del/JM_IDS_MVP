@@ -57,7 +57,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="YVB.+|EWP-21|EWP-22|EWP-31|EWP-32|EWP-01|EWP-02|EWP-11|EWP-12|EWP-41|EWP-42|EWP-51|EWP-52|EWP-61|EWP-62|YVK.+|EWC-23|EWC-03|EWC-05|IVB.+|IWC-23|IWC-24|IWC-25|IWC-03|IWC-04|IWC-13|SMU.+|TU1.+|LS.+|SE.+/>
+              <xs:pattern value="YVB.+|EWP-21|EWP-22|EWP-31|EWP-32|EWP-01|EWP-02|EWP-11|EWP-12|EWP-41|EWP-42|EWP-51|EWP-52|EWP-61|EWP-62|YVK.+|EWC-23|EWC-03|EWC-05|IVB.+|IWC-23|IWC-24|IWC-25|IWC-03|IWC-04|IWC-13|SMU.+|TU1.+|LS.+|SE.+"/>
             </xs:restriction>
           </value>
         </property>
@@ -87,7 +87,7 @@
         </property>
       </applicability>
       <requirements>
-        <property cardinality="required" instructions="Project-specific interior wall — TypeID starts with IV. Project-specific Utfackningsvägg  — TypeID starts with YV">
+        <property cardinality="required" instructions="Project-specific  wall — TypeID starts with IVB">
           <propertySet>
             <simpleValue>JM</simpleValue>
           </propertySet>
