@@ -56,7 +56,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="YTD.*-.*|PFD.*-.*|YPSD.*-.*|YSD.*-.*|FD.*-.*|RL.*|RL.*-G|GP|EP.*|GPI.*|D.*-.*|PD.*-.*|SD.*-.*|PSD.*-.*|TD.*-.*|FD-D|FD-DD|HF|IF.*-.*|IL.*|SLL.*|BGV1|BGV2|IL.*|IL.*|UL.*|UL.*|VL.*"/>
+              <xs:pattern value="YTD.+-.+|PFD.+-.+|YPSD.+-.+|YSD.+-.+|FD.+-.+|RL.+|RL.+-G|GP|EP.+|GPI.+|D.+-.+|PD.+-.+|SD.+-.+|PSD.+-.+|TD.+-.+|FD-D|FD-DD|HF|IF.+-.+|IL.+|SLL.+|BGV1|BGV2|IL.+|IL.+|UL.+|UL.+|VL.+"/>
             </xs:restriction>
           </value>
         </property>
