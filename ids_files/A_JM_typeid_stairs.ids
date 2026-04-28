@@ -56,7 +56,7 @@
           </baseName>
           <value>
             <xs:restriction base="xs:string">
-              <xs:pattern value="TRT.*|TRS.*|TR01-.*|TR02-.*|TR03-.*"/>
+              <xs:pattern value="TR01-.*|TR02-.*|TR03-.*|TR04-.*|TRS.*|TRT.*"/>
             </xs:restriction>
           </value>
         </property>
