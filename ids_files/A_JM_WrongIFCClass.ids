@@ -1,0 +1,3114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids xmlns="http://standards.buildingsmart.org/IDS"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <info>
+    <title>TypeID vs IFC class consistency</title>
+    <description>Flags elements whose JM.TypeID matches a known pattern but whose IFC class is wrong.</description>
+    <author>bim@jm.se</author>
+    <date>2026-04-29</date>
+  </info>
+  <specifications>
+    <specification name="TypeID 'BGV.*' on IfcBeam (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAM</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcBeam.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcBeamStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAMSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcBeamStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcBuildingElementProxy (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBUILDINGELEMENTPROXY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcBuildingElementProxy.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcChimney (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCHIMNEY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcChimney.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcColumn (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMN</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcColumn.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcColumnStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMNSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcColumnStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcCovering (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOVERING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcCovering.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcCurtainWall (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCURTAINWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcCurtainWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcFooting (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCFOOTING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcFooting.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcMember (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBER</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcMember.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcMemberStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBERSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcMemberStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcOpeningElement (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGELEMENT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcOpeningElement.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcOpeningStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcOpeningStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcPile (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPILE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcPile.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcPlate (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcPlate.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcPlateStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATESTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcPlateStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcRailing (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAILING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcRailing.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcRamp (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMP</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcRamp.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcRampFlight (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMPFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcRampFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcRoof (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCROOF</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcRoof.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcShadingDevice (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSHADINGDEVICE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcShadingDevice.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcSlab (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLAB</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcSlab.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcSlabElementedCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcSlabElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcSlabStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcSlabStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcStair (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIR</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcStair.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcStairFlight (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIRFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcStairFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcWall (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcWallElementedCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcWallElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcWallStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcWallStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcWindow (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOW</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcWindow.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'BGV.*' on IfcWindowStandardCase (should be IfcDoor) — Brandgasventilation" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOWSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="BGV.*"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Brandgasventilation Found on IfcWindowStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcBeam (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAM</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcBeam.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcBeamStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAMSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcBeamStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcBuildingElementProxy (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBUILDINGELEMENTPROXY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcBuildingElementProxy.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcChimney (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCHIMNEY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcChimney.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcColumn (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMN</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcColumn.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcColumnStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMNSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcColumnStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcCovering (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOVERING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcCovering.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcCurtainWall (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCURTAINWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcCurtainWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcFooting (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCFOOTING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcFooting.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcMember (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBER</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcMember.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcMemberStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBERSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcMemberStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcOpeningElement (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGELEMENT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcOpeningElement.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcOpeningStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcOpeningStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcPile (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPILE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcPile.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcPlate (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcPlate.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcPlateStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATESTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcPlateStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcRailing (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAILING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcRailing.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcRamp (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMP</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcRamp.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcRampFlight (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMPFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcRampFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcRoof (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCROOF</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcRoof.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcShadingDevice (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSHADINGDEVICE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcShadingDevice.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcSlab (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLAB</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcSlab.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcSlabElementedCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcSlabElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcSlabStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcSlabStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcStair (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIR</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcStair.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcStairFlight (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIRFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcStairFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcWall (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcWallElementedCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcWallElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcWallStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcWallStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcWindow (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOW</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcWindow.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'PFD.+-.+' on IfcWindowStandardCase (should be IfcDoor) — Fönsterdörr - Dubbel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOWSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="PFD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Dubbel Found on IfcWindowStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcBeam (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAM</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcBeam.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcBeamStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAMSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcBeamStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcBuildingElementProxy (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBUILDINGELEMENTPROXY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcBuildingElementProxy.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcChimney (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCHIMNEY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcChimney.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcColumn (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMN</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcColumn.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcColumnStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMNSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcColumnStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcCovering (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOVERING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcCovering.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcCurtainWall (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCURTAINWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcCurtainWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcFooting (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCFOOTING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcFooting.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcMember (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBER</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcMember.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcMemberStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBERSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcMemberStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcOpeningElement (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGELEMENT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcOpeningElement.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcOpeningStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcOpeningStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcPile (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPILE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcPile.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcPlate (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcPlate.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcPlateStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATESTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcPlateStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcRailing (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAILING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcRailing.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcRamp (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMP</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcRamp.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcRampFlight (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMPFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcRampFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcRoof (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCROOF</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcRoof.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcShadingDevice (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSHADINGDEVICE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcShadingDevice.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcSlab (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLAB</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcSlab.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcSlabElementedCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcSlabElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcSlabStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcSlabStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcStair (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIR</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcStair.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcStairFlight (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIRFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcStairFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcWall (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcWallElementedCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcWallElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcWallStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcWallStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcWindow (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOW</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcWindow.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'FD.+-.+' on IfcWindowStandardCase (should be IfcDoor) — Fönsterdörr - Enkel" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOWSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="FD.+-.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Fönsterdörr - Enkel Found on IfcWindowStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcBeam (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAM</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcBeam.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcBeamStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAMSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcBeamStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcBuildingElementProxy (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBUILDINGELEMENTPROXY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcBuildingElementProxy.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcChimney (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCHIMNEY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcChimney.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcColumn (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMN</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcColumn.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcColumnStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMNSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcColumnStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcCovering (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOVERING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcCovering.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcCurtainWall (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCURTAINWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcCurtainWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcFooting (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCFOOTING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcFooting.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcMember (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBER</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcMember.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcMemberStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBERSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcMemberStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcOpeningElement (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGELEMENT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcOpeningElement.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcOpeningStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcOpeningStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcPile (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPILE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcPile.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcPlate (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcPlate.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcPlateStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATESTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcPlateStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcRailing (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAILING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcRailing.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcRamp (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMP</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcRamp.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcRampFlight (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMPFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcRampFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcRoof (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCROOF</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcRoof.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcShadingDevice (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSHADINGDEVICE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcShadingDevice.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcSlab (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLAB</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcSlab.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcSlabElementedCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcSlabElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcSlabStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcSlabStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcStair (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIR</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcStair.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcStairFlight (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIRFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcStairFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcWall (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcWallElementedCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcWallElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcWallStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcWallStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcWindow (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOW</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcWindow.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+' on IfcWindowStandardCase (should be IfcDoor) — Rökgaslucka Fasad - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOWSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad - (Mått) Found on IfcWindowStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcBeam (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAM</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcBeam.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcBeamStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBEAMSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcBeamStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcBuildingElementProxy (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCBUILDINGELEMENTPROXY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcBuildingElementProxy.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcChimney (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCHIMNEY</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcChimney.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcColumn (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMN</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcColumn.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcColumnStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOLUMNSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcColumnStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcCovering (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCOVERING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcCovering.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcCurtainWall (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCCURTAINWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcCurtainWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcFooting (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCFOOTING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcFooting.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcMember (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBER</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcMember.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcMemberStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCMEMBERSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcMemberStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcOpeningElement (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGELEMENT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcOpeningElement.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcOpeningStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCOPENINGSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcOpeningStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcPile (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPILE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcPile.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcPlate (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcPlate.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcPlateStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCPLATESTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcPlateStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcRailing (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAILING</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcRailing.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcRamp (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMP</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcRamp.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcRampFlight (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCRAMPFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcRampFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcRoof (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCROOF</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcRoof.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcShadingDevice (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSHADINGDEVICE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcShadingDevice.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcSlab (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLAB</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcSlab.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcSlabElementedCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcSlabElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcSlabStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSLABSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcSlabStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcStair (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIR</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcStair.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcStairFlight (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCSTAIRFLIGHT</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcStairFlight.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcWall (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALL</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcWall.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcWallElementedCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLELEMENTEDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcWallElementedCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcWallStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWALLSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcWallStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcWindow (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOW</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcWindow.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+    <specification name="TypeID 'RL.+-G' on IfcWindowStandardCase (should be IfcDoor) — Rökgaslucka Fasad  - med inbrottsgaller - (Mått)" ifcVersion="IFC2X3 IFC4">
+      <applicability minOccurs="0" maxOccurs="unbounded">
+        <entity><name><simpleValue>IFCWINDOWSTANDARDCASE</simpleValue></name></entity>
+        <property>
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+          <value>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RL.+-G"/>
+            </xs:restriction>
+          </value>
+        </property>
+      </applicability>
+      <requirements>
+        <property cardinality="prohibited" instructions="Rökgaslucka Fasad  - med inbrottsgaller - (Mått) Found on IfcWindowStandardCase.">
+          <propertySet><simpleValue>JM</simpleValue></propertySet>
+          <baseName><simpleValue>TypeID</simpleValue></baseName>
+        </property>
+      </requirements>
+    </specification>
+  </specifications>
+</ids>
