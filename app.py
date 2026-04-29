@@ -17,6 +17,40 @@ IDS_FOLDER = Path("ids_files")
 APP_TITLE = "JM IDS Checker"
 MAX_UPLOAD_MB = 300
 
+# Parent classes we want to count, grouped. Subclasses are discovered via the
+# IFC schema (include_subtypes=True), so this list never goes stale.
+TRACKED_PARENTS = [
+    "IfcWall", "IfcDoor", "IfcWindow", "IfcSlab", "IfcBeam", "IfcColumn",
+    "IfcMember", "IfcPlate", "IfcStair", "IfcStairFlight", "IfcRamp",
+    "IfcRoof", "IfcCovering", "IfcCurtainWall", "IfcRailing",
+    "IfcOpeningElement", "IfcBuildingElementProxy",
+]
+
+
+def count_class_groups(ifc_file, parents):
+    """Group instance counts by parent class via schema-aware subtype lookup."""
+    rows = []
+    for parent in parents:
+        try:
+            elements = ifc_file.by_type(parent, include_subtypes=True)
+        except Exception:
+            continue
+        if not elements:
+            continue
+        # Break down by actual concrete class
+        by_class = {}
+        for e in elements:
+            cls = e.is_a()
+            by_class[cls] = by_class.get(cls, 0) + 1
+        total = sum(by_class.values())
+        if len(by_class) > 1:
+            breakdown = ", ".join(f"{c}: {n}" for c, n in sorted(by_class.items()))
+        else:
+            only = next(iter(by_class))
+            breakdown = "—" if only == parent else only
+        rows.append({"Group": parent, "Total": total, "Breakdown": breakdown})
+    return rows
+
 
 def load_ids_files():
     ids_files = {}
@@ -118,17 +152,15 @@ def main():
                 f"Schema: {ifc_file.schema}, "
                 f"Elements: {len(list(ifc_file))}"
             )
-            # Debug: wall type counts
-            for t in ["IfcWall", "IfcWallStandardCase"]:
-                st.caption(f"{t}: {len(ifc_file.by_type(t, include_subtypes=False))}")
-            for t in ["IfcDoor", "IfcWindow", "IfcSlab", "IfcStair", "IfcCovering",
-          "IfcMember", "IfcBeamStandardCase", "IfcColumnStandardCase"]:
-                try:
-                   c = len(ifc_file.by_type(t, include_subtypes=False))
-                   if c > 0:
-                       st.caption(f"{t}: {c}")
-                except:
-                    pass
+            # Element class breakdown (parent -> subclass counts)
+            class_rows = count_class_groups(ifc_file, TRACKED_PARENTS)
+            if class_rows:
+                grand_total = sum(r["Total"] for r in class_rows)
+                with st.expander(
+                    f"\U0001F4CA Element classes — {grand_total} elements across {len(class_rows)} groups",
+                    expanded=False,
+                ):
+                    st.dataframe(class_rows, use_container_width=True, hide_index=True)
 
             all_results = []
             bcf_issues = []
